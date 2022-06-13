@@ -1,0 +1,419 @@
+*{
+  margin: 0 ;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.navbar{
+    width: 100%;
+    height: 90px;
+    display: grid;
+    grid-template-columns: 7rem 2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 7rem;
+    
+}
+
+.logo{
+    display: flex;
+    grid-column: 2/3;
+    align-items: center;
+}
+
+.logo img{
+    height: 70px;
+    width: 150px;
+}
+
+
+
+.home {
+    display: flex;
+    grid-column: 3/4;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.home ul{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16.5px;
+    
+}
+
+.home ul li a{
+    color: black;
+}
+
+.about{
+    display: flex;
+    grid-column: 4/5;
+    align-items: center;
+    justify-content: center;
+}
+
+.about ul{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16.5;
+
+}
+
+.about ul li a{
+    color: black;
+}
+
+.features{
+    display: flex;
+    grid-column: 5/6;
+    align-items: center;
+    justify-content: center;
+}
+
+.features ul{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16.5px;
+}
+
+.features ul li a{
+    color: black;
+}
+
+.tools{
+    display: grid;
+    grid-column: 6/7;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.tools ul{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16.5px;
+}
+
+.tools ul li a{
+    color: black;
+}
+
+.pricing{
+    display: grid;
+    grid-column: 7/8;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.pricing ul{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16.5px;
+}
+
+.pricing ul li a{
+    color: black;
+}
+
+.login-btn{
+    display: grid;
+    grid-column: 8/9;
+    align-items: center;
+    
+    justify-content: flex-end;
+}
+
+.login-btn button{
+    padding: 10px 10px;
+    color: white;
+    background-color: blueviolet;
+    height: 35px;
+    width: 100px;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+}
+
+.register-btn{
+    display: grid;
+    grid-column: 9/10;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.register-btn button{
+    padding: 10px 10px;
+    color: white;
+    background-color: blueviolet;
+    cursor: pointer;
+    width: 100px;
+    height: 35px;
+    font-size: 15px;
+    border: none;
+}
+
+
+
+/*   First Component  */
+
+
+.background-img img{
+   width: 1500px;
+   height: 700px;
+   position: relative;
+}
+
+.first-component-title{
+    display: grid;
+    grid-template-columns: 16rem 1fr 1fr 16rem;
+    margin-top: -600px;
+    margin-left: 16rem;
+}
+
+.heading1{
+    position: absolute;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    
+}
+
+.below-heading1{
+    position: absolute;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-top: 75px;
+}
+.sub-heading1{
+    position: absolute;
+    margin-top: 140px;
+    color: white;
+}
+
+
+
+.getStarted-btn{
+    position: absolute;
+    margin-left: 16rem;
+    margin-top: 230px;
+}
+
+.getStarted-btn button{
+    padding: 19px 19px;
+    width: 190px;
+    font-size: 16px;
+    color: white;
+    background-color: blueviolet;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+/*   Second Component   */
+
+.second-component{
+    display: grid;
+    position: absolute;
+    height: 500px;
+    margin-top: 670px;
+    
+
+}
+
+.heading2{
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    margin-left: 30rem;
+
+
+}
+
+.card-items{
+    display: flex;
+    margin-left: 8rem;
+    margin-top: -40px;
+    flex-wrap: wrap;
+    
+}
+
+.card{
+   
+    background-color: white;
+    width: 220px;
+    height: 250px;
+    margin: 17px;
+    
+}
+
+.card-img{
+    background-color: blueviolet;
+    height: 150px;
+    margin-bottom: 15px;
+    background-size: cover;
+}
+
+.card1{
+    background-image: url('./images/sample.jpeg') ;
+}
+
+.card2{
+    background-image: url('./images/sample.jpeg') ;
+}
+
+.card3{
+    background-image: url('./images/sample.jpeg') ;
+}
+
+.card4{
+    background-image: url('./images/sample.jpeg') ;
+}
+
+.card5{
+    background-image: url('./images/sample.jpeg') ;
+}
+
+.card h2{
+    padding: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card:hover{
+    background-color: darkslategrey;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 0.6s ease;
+}
+
+
+/*  Third Component   */
+
+
+.third-component{
+    display: flex;
+    margin-top: 1400px;
+    margin-left: 7rem;
+    
+    
+}
+
+.heading3{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: flex;
+   position: absolute;
+   margin-top: -220px;
+   margin-left: 25rem;
+}
+
+.features-card{
+    display: grid;
+}
+
+.features-card2{
+    background-color: white;
+    width: 320px;
+    height: 350px;
+    margin: 17px;
+    border: 2px dashed grey;
+}
+
+.up{
+    display: grid;
+    grid-template-columns: 7rem 1fr 1fr 1fr 7rem;
+    grid-template-rows: 7rem 1fr 1fr 7rem;
+
+}
+
+.feature1{
+    display: grid;
+    grid-column: 2/3 ;
+    grid-row: 1/2;
+    grid-gap: 10px;
+}
+
+.feature2{
+    display: grid;
+    grid-column: 3/4 ;
+    grid-row: 1/2;
+}
+
+.feature3{
+    display: grid;
+    grid-column: 4/5 ;
+    grid-row: 1/2;
+}
+
+.down{
+    display: grid;
+    grid-template-columns:17rem 1fr 1fr 15rem ;
+    grid-template-rows: 15rem 1fr 1fr 7rem;
+    
+   
+}
+
+.feature4{
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-content: center;
+}
+
+.feature5{
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    justify-content: center;
+}
+
+.invest-btn{
+    margin-top: -400px;
+    display: flex;
+    justify-content: center;
+}
+
+.invest-btn button{
+    height: 60px;
+    width: 180px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+/*   Fourth Component   */
+
+.fourth-component{
+    height: 400px;
+
+}
+
+.div-heading{
+    display: grid;
+    grid-template-columns: 25rem 2fe 25rem;
+    margin-top: -105px;
+}
+
+
+.heading4{
+    grid-column: 2/3;
+}
